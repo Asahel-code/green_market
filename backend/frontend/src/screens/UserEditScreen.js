@@ -94,7 +94,7 @@ export default function UserEditScreen() {
       <Helmet>
         <title>Edit User ${userId}</title>
       </Helmet>
-      <h1>Edit User {userId}</h1>
+      <h3>Edit User {userId}</h3>
 
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -130,7 +130,7 @@ export default function UserEditScreen() {
           />
 
           <div className="mb-3">
-            <Button disabled={loadingUpdate} type="submit">
+            <Button disabled={loadingUpdate} variant="success" type="submit">
               Update
             </Button>
             {loadingUpdate && <LoadingBox></LoadingBox>}

@@ -26,7 +26,7 @@ main {
 }
 
 .rating span {
-  color: #00fa85;
+  color: #037540;
 }
 
 .product {
@@ -55,8 +55,8 @@ main {
   color: #a0a0a0;
 }
 .checkout-steps > div.active {
-  border-bottom: 0.2rem solid #03d171;
-  color: #03d171;
+  border-bottom: 0.2rem solid #03aa5c;
+  color: #02ac2d;
 }
 
 /* sidebar */

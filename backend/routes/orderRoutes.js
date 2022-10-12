@@ -140,7 +140,7 @@ orderRouter.put(
       const updatedOrder = await order.save();
 
       mailTransport().sendMail({
-        from: 'emailverification@email.com',
+        from: 'service.freshGreenMarket@gmail.com',
         to: order.user.email,
         subject: `New order ${order._id}`,
         html: payOrderEmailTemplate(order),

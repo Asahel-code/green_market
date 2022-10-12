@@ -65,7 +65,7 @@ export default function ShippingAddressScreen() {
 
       <CheckoutSteps step1 step2></CheckoutSteps>
       <div className="container small-container">
-        <h1 className="my-3">Shipping Address</h1>
+        <h2 className="my-3">Shipping Address</h2>
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="fullName">
             <Form.Label>Full Name</Form.Label>
@@ -127,7 +127,7 @@ export default function ShippingAddressScreen() {
           </div>
 
           <div className="mb-3">
-            <Button variant="primary" type="submit">
+            <Button variant="success" type="submit">
               Continue
             </Button>
           </div>

@@ -8,7 +8,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from './Store';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <StoreProvider>
       <HelmetProvider>
@@ -17,8 +18,7 @@ ReactDOM.render(
         </PayPalScriptProvider>
       </HelmetProvider>
     </StoreProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

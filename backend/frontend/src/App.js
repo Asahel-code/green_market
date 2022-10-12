@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes,  } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BsFillBasketFill, BsFacebook, BsWhatsapp, BsTwitter, BsInstagram } from "react-icons/bs";
@@ -63,7 +63,7 @@ function App() {
     fetchCategories();
   }, []);
   return (
-    <BrowserRouter>
+    <Router>
       <div
         className={
           sidebarIsOpen
@@ -153,21 +153,22 @@ function App() {
         >
           <Nav className="flex-column text-white w-100 p-2">
             <Nav.Item>
-              <strong>Categories</strong>
+              <strong className="fw-bold fs-5 text mb-2">Categories</strong>
             </Nav.Item>
             {categories.map((category) => (
               <Nav.Item key={category}>
-                <LinkContainer
+                <Link
                   to={`/search?category=${category}`}
                   onClick={() => setSidebarIsOpen(false)}
+                  className="text-decoration-none text-light"
                 >
-                  <Nav.Link>{category}</Nav.Link>
-                </LinkContainer>
+                  {category}
+                </Link>
               </Nav.Item>
             ))}
           </Nav>
         </div>
-        <TopContent/>
+        <TopContent />
         <main>
           <Container className="mt-3">
             <Routes>
@@ -288,7 +289,7 @@ function App() {
           </div>
         </footer>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
