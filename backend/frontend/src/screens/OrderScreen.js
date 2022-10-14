@@ -82,7 +82,7 @@ export default function OrderScreen() {
       .create({
         purchase_units: [
           {
-            amount: { value: order.totalPrice * 121 },
+            amount: { value: Math.round(order.totalPrice * 121.05) },
           },
         ],
       })
