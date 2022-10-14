@@ -22,6 +22,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Runs the app in the production mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
+## Test app
+
+The app has been deployed on heroku you can preview it on [https://fresh-green-market.herokuapp.com](https://fresh-green-market.herokuapp.com)
+
 
 ## Home page
 <img src="/backend/frontend/public/images/img1.png" alt="home page"/>
