@@ -1,4 +1,4 @@
-# E-commerce App - Fresh Market
+# E-commerce App - Fresh Green Market
 
 This is an ecommerce web application that enable a grocery vendor to sell and supply his/her grocery product to interested customers. The app offers the ability for a customer to buy this groceries online and pay them instantly
 
