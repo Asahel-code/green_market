@@ -24,36 +24,36 @@ Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
 
 ## Home page
-<img src="./src/assets/img1.png" alt="home page"/>
-<img src="./src/assets/img2.png" alt="home page"/>
+<img src="/img1.png" alt="home page"/>
+<img src="/img2.png" alt="home page"/>
 
 ## Cart page
-<img src="./src/assets/img3.png" alt="cart page"/>
+<img src="/img3.png" alt="cart page"/>
 
 ## Shipping address page
-<img src="./src/assets/img4.png" alt="shipping address page"/>
+<img src="/img4.png" alt="shipping address page"/>
 
 ## Payment method page
-<img src="./src/assets/img5.png" alt="payment method page"/>
+<img src="/img5.png" alt="payment method page"/>
 
 ## Order page
-<img src="./src/assets/img6.png" alt="order page"/>
+<img src="/img6.png" alt="order page"/>
 
 ## Payment page
-<img src="./src/assets/img7.png" alt="payment page"/>
-<img src="./src/assets/img8.png" alt="payment page"/>
+<img src="/img7.png" alt="payment page"/>
+<img src="/img8.png" alt="payment page"/>
 
 ## Admin dashboard page
-<img src="./src/assets/img9.png" alt="admin dashboard page"/>
-<img src="./src/assets/img10.png" alt="admin dashboard page"/>
+<img src="/img9.png" alt="admin dashboard page"/>
+<img src="/img10.png" alt="admin dashboard page"/>
 
 ## Order report page
-<img src="./src/assets/img11.png" alt="order report page"/>
-<img src="./src/assets/img12.png" alt="order report page"/>
-<img src="./src/assets/img13.png" alt="order report page"/>
+<img src="/img11.png" alt="order report page"/>
+<img src="/img12.png" alt="order report page"/>
+<img src="/img13.png" alt="order report page"/>
 
 ## Products page"
-<img src="./src/assets/img14.png" alt="product page"/>
+<img src="/img14.png" alt="product page"/>
 
 
 ## Contributors
