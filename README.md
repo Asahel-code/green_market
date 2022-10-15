@@ -65,4 +65,4 @@ The app has been deployed on heroku you can preview it on [https://fresh-green-m
 2. Gloria Mtagwaba
 3. Hansel Kirimi
 4. Sayid Abdi
-5. Elaine Yvette Abago
+5. Elaine Yvette Abayo
