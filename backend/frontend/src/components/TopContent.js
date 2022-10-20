@@ -17,7 +17,7 @@ const TopContent = () => {
                             <span className="text-gray-500 " data-aos="fade-down">What to restock you home with groceries? Here we are to provide fresh groceries directly from the farm</span>
                             <div className="py-3" data-aos="fade-down">
                                 <Button variant="dark">
-                                    <Link to="/allProperties" className="text-white text-decoration-none">Get started</Link>
+                                    <Link to="#products" className="text-white text-decoration-none">Get started</Link>
                                 </Button>
                             </div>
                             <div className="row">
