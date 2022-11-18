@@ -8,7 +8,7 @@ const TopContent = () => {
     const location = useLocation();
 
     return (
-        <div>
+        <div className="top-header">
             {location.pathname === '/' ?
                 <div className="bg-light">
                     <div className="row py-4">
