@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useReducer } from 'react';
+import React, { useContext, useEffect, useReducer, useState } from 'react';
 import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -14,6 +14,8 @@ import MessageBox from '../components/MessageBox';
 import { Store } from '../Store';
 import { getError } from '../utils';
 import { toast } from 'react-toastify';
+import MpesaPaymentButton from '../components/MpesaPaymentButton';
+import MpesaPaymentModal from '../modal/MpesaPaymentModal';
 
 function reducer(state, action) {
   switch (action.type) {
@@ -49,6 +51,12 @@ function reducer(state, action) {
   }
 }
 export default function OrderScreen() {
+  const [show, setShow] = useState(false);
+
+  const handleModal = () => {
+    setShow(!show);
+  };
+
   const { state } = useContext(Store);
   const { userInfo } = state;
 
@@ -307,13 +315,19 @@ export default function OrderScreen() {
                     {isPending ? (
                       <LoadingBox />
                     ) : (
-                      <div>
-                        <PayPalButtons
-                          createOrder={createOrder}
-                          onApprove={onApprove}
-                          onError={onError}
-                        ></PayPalButtons>
-                      </div>
+                      order.paymentMethod === "PayPal" ?
+                        <div>
+                          <PayPalButtons
+                            createOrder={createOrder}
+                            onApprove={onApprove}
+                            onError={onError}
+                          ></PayPalButtons>
+                        </div>
+                        : order.paymentMethod === "Mpesa" &&
+                        <div>
+                          <MpesaPaymentButton showModal={handleModal} />
+                          <MpesaPaymentModal handleShow={show} handleCloseModal={handleModal} amount={order.totalPrice.toFixed(2)} />
+                        </div>
                     )}
                     {loadingPay && <LoadingBox></LoadingBox>}
                   </ListGroup.Item>
